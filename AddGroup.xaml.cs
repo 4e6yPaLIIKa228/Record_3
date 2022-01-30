@@ -42,8 +42,9 @@ namespace Record
                     SQLiteCommand cmd = new SQLiteCommand(query, connection);
                     try
                     {
-                        cmd.Parameters.AddWithValue("@NameGroup", TbGroup.Text);
+                        cmd.Parameters.AddWithValue("@NameGroup", TbGroup.Text.ToUpper());
                         cmd.ExecuteNonQuery();
+                        MessageBox.Show("Группа " + $"{TbGroup.Text}" + " добавленна");
                         this.Close();
                     }
                     catch (SQLiteException ex)

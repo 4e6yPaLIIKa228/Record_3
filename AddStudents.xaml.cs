@@ -49,5 +49,13 @@ namespace Record
             AdSt.Owner = this;
             AdSt.ShowDialog();
         }
+
+        private void BtAddStudentInMonth_Click(object sender, RoutedEventArgs e)
+        {
+
+            AddStudentInMonth  AdSt = new AddStudentInMonth();
+            AdSt.Owner = this;
+            AdSt.ShowDialog();
+        }
     }
 }

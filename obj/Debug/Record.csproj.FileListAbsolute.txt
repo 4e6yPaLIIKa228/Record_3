@@ -30,3 +30,5 @@ C:\Users\Administrator\Desktop\Практика\Record_1-main-master\obj\Debug\A
 C:\Users\Administrator\Desktop\Практика\Record_1-main-master\obj\Debug\AddGroup.baml
 C:\Users\Administrator\Desktop\Практика\Record_1-main-master\obj\Debug\AddStudent.g.cs
 C:\Users\Administrator\Desktop\Практика\Record_1-main-master\obj\Debug\AddStudent.baml
+C:\Users\Administrator\Desktop\Практика\Record_1-main-master\obj\Debug\AddStudentInMonth.g.cs
+C:\Users\Administrator\Desktop\Практика\Record_1-main-master\obj\Debug\AddStudentInMonth.baml

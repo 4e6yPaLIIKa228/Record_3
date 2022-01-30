@@ -80,6 +80,9 @@
     <Compile Include="AddStudent.xaml.cs">
       <DependentUpon>AddStudent.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddStudentInMonth.xaml.cs">
+      <DependentUpon>AddStudentInMonth.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AddStudents.xaml.cs">
       <DependentUpon>AddStudents.xaml</DependentUpon>
     </Compile>
@@ -89,6 +92,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddStudent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddStudentInMonth.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

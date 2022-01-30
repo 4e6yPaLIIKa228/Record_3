@@ -10,6 +10,6 @@
         <Button x:Name="BtBack" Content="Назад" HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top" Width="61" Height="38" Click="BtBack_Click"/>
         <Button x:Name="BtAddGroup" Content="Добавить группу" HorizontalAlignment="Left" Margin="80,40,0,0" VerticalAlignment="Top" Width="140" Height="40" Click="BtAddGroup_Click"/>
         <Button x:Name="BtAddStudent" Content="Добавить студента" HorizontalAlignment="Left" Margin="80,105,0,0" VerticalAlignment="Top" Width="140" Height="40" Click="BtAddStudent_Click"/>
-        <Button x:Name="BtAddStudentInMonth" Content="Добавить группу в новый месяц" HorizontalAlignment="Left" Margin="60,170,0,0" VerticalAlignment="Top" Width="200" Height="40"/>
+        <Button x:Name="BtAddStudentInMonth" Content="Добавить группу в новый месяц" HorizontalAlignment="Left" Margin="60,170,0,0" VerticalAlignment="Top" Width="200" Height="40" Click="BtAddStudentInMonth_Click"/>
     </Grid>
 </Window>
