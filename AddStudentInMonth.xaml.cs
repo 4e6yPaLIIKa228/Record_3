@@ -81,7 +81,7 @@ namespace Record
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
-           this.Close();
+            this.Close();
         }
 
 
@@ -103,27 +103,27 @@ namespace Record
                     SQLiteCommand cmd = new SQLiteCommand(query, connection);
                     int countID = Convert.ToInt32(cmd.ExecuteScalar());
                     //cmd.ExecuteNonQuery();
-                    MessageBox.Show($"{countID}");
+                   // MessageBox.Show($"{countID}");
                     int proverka = 0;
-                    
-                    for (int i= 1;i <= countID;i++ )
+
+                    for (int i = 1; i <= countID; i++)
                     {
                         string query1 = $@"SELECT ID FROM Students WHERE IDGroup = '{idgrup}' and ID > '{proverka}'";//Ищем ID студентов 
                         SQLiteCommand cmd1 = new SQLiteCommand(query1, connection);
                         int countID2 = int.Parse(cmd1.ExecuteScalar().ToString());
-                        MessageBox.Show($"{countID2}");
+                      //  MessageBox.Show($"{countID2}");
                         proverka = countID2;
                         ///////////////////////// 
                         int idmonth, idyears;
-                         bool resultClass1 = int.TryParse(CbMonth.SelectedValue.ToString(), out idmonth);
+                        bool resultClass1 = int.TryParse(CbMonth.SelectedValue.ToString(), out idmonth);
                         bool resultClass2 = int.TryParse(CbYears.SelectedValue.ToString(), out idyears);
                         string query4 = $@"SELECT  COUNT(1) FROM Traffics WHERE IDStudent= '{proverka}' AND IDMonth={idmonth} and IDYear=@'{idyears}' "; //Проверка студента на повторное добавление его в новый месяц
                         SQLiteCommand cmd4 = new SQLiteCommand(query4, connection);
                         int count = Convert.ToInt32(cmd.ExecuteScalar());
                         if (count == 1)
                         {
-                           // MessageBox.Show("Ученик уже добавлен в этот месяц");
-                            if (countID == 1) {this.Close();}
+                            // MessageBox.Show("Ученик уже добавлен в этот месяц");
+                            if (countID == 1) { this.Close(); }
                         }
                         else
                         {
@@ -132,7 +132,7 @@ namespace Record
                             cmd3.ExecuteNonQuery();
                             MessageBox.Show("Выполнил для " + $"{countID2}");
                         }
-                          
+
                     }
                     MessageBox.Show("Группа добавленна в новый месяц");
                     this.Close();

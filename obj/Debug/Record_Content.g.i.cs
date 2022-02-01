@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("record11.db")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("record.db")]
 
 

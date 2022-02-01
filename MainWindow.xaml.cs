@@ -205,7 +205,7 @@ namespace Record
                     {
                         DataRowView row = (DataRowView)DGStudents.SelectedItems[0];
                         Stroka();
-                        TbNumber.Text = row["Day1"].ToString();
+                        //TbNumber.Text = row["Day1"].ToString();
                         Saver.D1 = row["Day1"].ToString(); Saver.D2 = row["Day2"].ToString(); Saver.D3 = row["Day3"].ToString(); Saver.D4 = row["Day4"].ToString(); Saver.D5 = row["Day5"].ToString(); Saver.D6 = row["Day6"].ToString(); Saver.D7 = row["Day7"].ToString(); Saver.D8 = row["Day8"].ToString(); Saver.D8 = row["Day8"].ToString(); Saver.D9 = row["Day9"].ToString(); Saver.D10 = row["Day10"].ToString(); Saver.D11 = row["Day11"].ToString(); Saver.D12 = row["Day12"].ToString(); Saver.D13 = row["Day13"].ToString(); Saver.D14 = row["Day14"].ToString(); Saver.D15 = row["Day15"].ToString(); Saver.D16 = row["Day16"].ToString(); Saver.D17 = row["Day17"].ToString(); Saver.D18 = row["Day18"].ToString(); Saver.D19 = row["Day19"].ToString(); Saver.D20 = row["Day20"].ToString(); Saver.D21 = row["Day21"].ToString(); Saver.D22 = row["Day22"].ToString(); Saver.D23 = row["Day23"].ToString(); Saver.D24 = row["Day24"].ToString(); Saver.D25 = row["Day25"].ToString(); Saver.D26 = row["Day26"].ToString(); Saver.D27 = row["Day27"].ToString(); Saver.D28 = row["Day28"].ToString(); Saver.D29 = row["Day29"].ToString();
                         Saver.D30 = row["Day30"].ToString(); Saver.D31 = row["Day31"].ToString();
                         try  
@@ -286,13 +286,13 @@ namespace Record
                         cmd.Parameters.AddWithValue("@NSM", Saver.NameFirst);
                         
                         int countID = Convert.ToInt32(cmd.ExecuteScalar());
-                        MessageBox.Show($@"{countID}" + " IDSTudent");
+                       // MessageBox.Show($@"{countID}" + " IDSTudent");
                         cmd.ExecuteNonQuery();
                         string query2 = $@"SELECT ID FROM Traffics WHERE IDStudent ='{countID}' and IDMonth='{Saver.idmonth}' and IDYear='{Saver.idyears}'"; //ID студента в таблице трафиика
                         SQLiteCommand cmd2 = new SQLiteCommand(query2, connection);
                         int TrafficID = Convert.ToInt32(cmd2.ExecuteScalar());
                         Saver.IDNSM = TrafficID;
-                        MessageBox.Show($@"{Saver.IDNSM}" + " IDTraffic");
+                       // MessageBox.Show($@"{Saver.IDNSM}" + " IDTraffic");
                     }
                 }
                 catch (Exception exp)
@@ -303,11 +303,35 @@ namespace Record
         }
         private void BtAdd_Click(object sender, RoutedEventArgs e)
         {
+
             AddStudents AdSt = new AddStudents();
             AdSt.Owner = this;
             //AdSt.Show();
             AdSt.ShowDialog();
+
+
         }
- 
+
+        private void w_Click(object sender, RoutedEventArgs e)
+        {
+            if ((CbGroups.SelectedIndex != -1) && (CbMonth.SelectedIndex != -1) && (CbYears.SelectedIndex != -1))
+            {
+                Window1 Wi = new Window1(CbGroups.Text, CbMonth.Text, CbYears.Text);
+                Wi.Show();
+            }
+            else
+            {
+                MessageBox.Show("Выберите три критерия ");
+            }
+           
+        }
+
+        private void Obrat_Click(object sender, RoutedEventArgs e)
+        {
+            ObratConn AdSt = new ObratConn();
+            AdSt.Owner = this;
+            //AdSt.Show();
+            AdSt.ShowDialog();
+        }
     }  
 }

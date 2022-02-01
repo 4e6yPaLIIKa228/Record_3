@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Record"
         mc:Ignorable="d"
-        Title="AddStudentInMonth" Height="260" Width="350" WindowState="Normal" WindowStartupLocation="CenterScreen">
+      Title="AddStudentInMonth" Height="260" Width="350" WindowState="Normal" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30*"/>

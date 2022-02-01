@@ -12,10 +12,10 @@
         <Button x:Name="BtnAdd" Content="Добавить" HorizontalAlignment="Left" Height="40" Margin="365,200,0,0" VerticalAlignment="Top" Width="82" Click="BtnAdd_Click"/>
         <Button x:Name="BtnBack" Content="Назад" HorizontalAlignment="Left" Height="40" Margin="19,200,0,0" VerticalAlignment="Top" Width="81" Click="BtnBack_Click"/>
         <Label Content="Группы" HorizontalAlignment="Left" Margin="29,65,0,0" VerticalAlignment="Top" Width="51" HorizontalContentAlignment="Right" Height="26"/>
-        <ComboBox Grid.Column="0"   x:Name="CbGroups" Margin="81,69,238,169"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="138" Height="22" FontWeight="Bold" FontSize="16"/>
+        <ComboBox Grid.Column="0"   x:Name="CbGroups" Margin="81,69,238,162"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="138" Height="29" FontWeight="Bold" FontSize="16"/>
         <Label Content="Месяцы" HorizontalAlignment="Left" Margin="224,65,0,0" VerticalAlignment="Top" Width="56" HorizontalContentAlignment="Right" Height="26"/>
-        <ComboBox   x:Name="CbMonth" Margin="280,69,37,169"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="140" Height="22" FontWeight="Bold" FontSize="16" />
+        <ComboBox   x:Name="CbMonth" Margin="280,69,37,162"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="140" Height="29" FontWeight="Bold" FontSize="16" />
         <Label Content="Годы" HorizontalAlignment="Left" Margin="50,108,0,0" VerticalAlignment="Top" Width="30" HorizontalContentAlignment="Right" Height="26"/>
-        <ComboBox   x:Name="CbYears" Margin="81,112,238,126"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="138" Height="22" FontWeight="Bold" FontSize="16" />
+        <ComboBox   x:Name="CbYears" Margin="81,112,238,121"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="138" Height="27" FontWeight="Bold" FontSize="16" />
     </Grid>
 </Window>
