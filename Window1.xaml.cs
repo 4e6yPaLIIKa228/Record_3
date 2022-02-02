@@ -118,7 +118,7 @@ namespace Record
                 WHERE IDGroup = '{Saver.idGroup}'  and IDMonth = '{Saver.idmonth}' and IDYear = '{Saver.idyears}' and {Saver.Day} = 'н'  ";//Количество учеников с Н
                 SQLiteCommand cmd4 = new SQLiteCommand(query4, connection);
                 Saver.SumH = Convert.ToInt32(cmd4.ExecuteScalar()); 
-                //MessageBox.Show($@"{Saver.SumH}" + " Н " + $@"{Saver.Day}");
+               // MessageBox.Show($@"{Saver.SumH}" + " Н " + $@"{Saver.Day}");
 
                 string query5 = $@"SELECT  count() FROM Traffics 
                 JOIN Months on Traffics.IDMonth = Months.ID 
@@ -143,37 +143,37 @@ namespace Record
         }
         public void Days()
         {
-            if (Saver.Days == "1") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day1"; }
-            if (Saver.Days == "2") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day2"; }
-            if (Saver.Days == "3") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day3"; }
-            if (Saver.Days == "4") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day4"; }
-            if (Saver.Days == "5") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day5"; }
-            if (Saver.Days == "6") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day6"; }
-            if (Saver.Days == "7") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day7"; }
-            if (Saver.Days == "8") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day8"; }
-            if (Saver.Days == "9") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day9"; }
-            if (Saver.Days == "10") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day10"; }
-            if (Saver.Days == "11") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day11"; }
-            if (Saver.Days == "12") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day12"; }
-            if (Saver.Days == "13") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day13"; }
-            if (Saver.Days == "14") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day14"; }
-            if (Saver.Days == "15") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day15"; }
-            if (Saver.Days == "16") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day16"; }
-            if (Saver.Days == "17") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day17"; }
-            if (Saver.Days == "18") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day18"; }
-            if (Saver.Days == "19") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day19"; }
-            if (Saver.Days == "20") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day20"; }
-            if (Saver.Days == "21") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day21"; }
-            if (Saver.Days == "22") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day22"; }
-            if (Saver.Days == "23") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day23"; }
-            if (Saver.Days == "24") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day24"; }
-            if (Saver.Days == "25") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day25"; }
-            if (Saver.Days == "26") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day26"; }
-            if (Saver.Days == "27") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day27"; }
-            if (Saver.Days == "28") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day28"; }
-            if (Saver.Days == "29") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day29"; }
-            if (Saver.Days == "30") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day30"; }
-            if (Saver.Days == "31") { MessageBox.Show("Days " + $"{Saver.Days}"); Saver.Day = "Day31"; }
+            if (Saver.Days == "1") {/* MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day1"; }
+            if (Saver.Days == "2") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day2"; }
+            if (Saver.Days == "3") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day3"; }
+            if (Saver.Days == "4") {/*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day4"; }
+            if (Saver.Days == "5") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/; Saver.Day = "Day5"; }
+            if (Saver.Days == "6") {/*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day6"; }
+            if (Saver.Days == "7") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day7"; }
+            if (Saver.Days == "8") {/*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day8"; }
+            if (Saver.Days == "9") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day9"; }
+            if (Saver.Days == "10") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day10"; }
+            if (Saver.Days == "11") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day11"; }
+            if (Saver.Days == "12") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day12"; }
+            if (Saver.Days == "13") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day13"; }
+            if (Saver.Days == "14") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day14"; }
+            if (Saver.Days == "15") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day15"; }
+            if (Saver.Days == "16") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day16"; }
+            if (Saver.Days == "17") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day17"; }
+            if (Saver.Days == "18") {/*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day18"; }
+            if (Saver.Days == "19") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day19"; }
+            if (Saver.Days == "20") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day20"; }
+            if (Saver.Days == "21") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day21"; }
+            if (Saver.Days == "22") {/*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day22"; }
+            if (Saver.Days == "23") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day23"; }
+            if (Saver.Days == "24") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day24"; }
+            if (Saver.Days == "25") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day25"; }
+            if (Saver.Days == "26") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day26"; }
+            if (Saver.Days == "27") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day27"; }
+            if (Saver.Days == "28") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day28"; }
+            if (Saver.Days == "29") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/Saver.Day = "Day29"; }
+            if (Saver.Days == "30") {/*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day30"; }
+            if (Saver.Days == "31") { /*MessageBox.Show("Days " + $"{Saver.Days}");*/ Saver.Day = "Day31"; }
         }
     }
 }

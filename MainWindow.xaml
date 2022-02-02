@@ -24,9 +24,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Column="0"   FontWeight="Bold"  FontSize="18" Text="Группы" Margin="0,-55,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-            <ComboBox Grid.Column="0"   x:Name="CbGroups" Margin="10,32,10,20"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="28" FontWeight="Bold" FontSize="16" SelectionChanged="CbGroups_SelectionChanged"  >
-
-            </ComboBox>
+            <ComboBox Grid.Column="0"   x:Name="CbGroups" Margin="10,32,10,20"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="28" FontWeight="Bold" FontSize="16" SelectionChanged="CbGroups_SelectionChanged"  />
             <TextBlock Grid.Column="1"   FontWeight="Bold"  FontSize="18" Text="Месяцы" Margin="0,-55,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
             <ComboBox Grid.Column="1"   x:Name="CbMonth" Margin="10,32,10,20"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="28" FontWeight="Bold" FontSize="16" SelectionChanged="CbMonth_SelectionChanged"  />
             <TextBlock Grid.Column="2"   FontWeight="Bold"  FontSize="18" Text="Годы" Margin="0,-55,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
